@@ -16,6 +16,10 @@ export const ModuleWire = ()=>{
                 <button onClick={()=>handleNmbrWire(5)}>5</button>
                 <button onClick={()=>handleNmbrWire(6)}>6</button>
             </div>
+            {nbrWire === 1 && (
+                <>
+                </>
+            )}
         </>
     )
 }
