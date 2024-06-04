@@ -1,13 +1,21 @@
 import {NavBar} from "../../Components/NavBar.tsx";
 import {useCallback, useState} from "react";
 import './moduleWire.css';
+import {Wire} from "../../Components/Wire.tsx";
 
 export const ModuleWire = ()=>{
     const [nbrWire, setNbrWire] = useState(0)
+    const [firstWireColor, setfirstWireColor] = useState('')
 
     const handleNmbrWire = useCallback((nbrWire: number) => {
         setNbrWire(nbrWire);
     },[])
+
+    const handleFirstWireColor= useCallback((color:string)=>{
+        setfirstWireColor(color)
+    },[])
+
+
     return(
         <>
             <NavBar/>
@@ -20,9 +28,13 @@ export const ModuleWire = ()=>{
                     <button onClick={()=>handleNmbrWire(6)}>6</button>
                 </div>
             </div>
-            {nbrWire === 1 && (
-                <>
-                </>
+            {nbrWire === 3 && (
+                <div>
+                    <p>De quel couleur sont les fils ?</p>
+                    <div style={{display: "flex", justifyContent:'center', flexDirection: "column",gap: '10px'}}>
+                        <Wire content={'first wire'} color={firstWireColor} handleWireColor={handleFirstWireColor}/>
+                    </div>
+                </div>
             )}
         </>
     )

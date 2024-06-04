@@ -18,3 +18,11 @@ export const STRIP_COLOR={
     white:'white',
     yellow:'yellow',
 }
+
+export const WIRE_COLOR = {
+    red:'red',
+    blue:'blue',
+    white:'white',
+    yellow:'yellow',
+    black:'black',
+}

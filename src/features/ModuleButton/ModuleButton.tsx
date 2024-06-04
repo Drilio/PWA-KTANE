@@ -1,5 +1,5 @@
 import {Button} from "../../Components/Button.tsx";
-import {BUTTON_COLOR, BUTTON_TEXT, STRIP_COLOR} from "./utils.ts";
+import {BUTTON_COLOR, BUTTON_TEXT, STRIP_COLOR} from "../../utils.ts";
 import './modeButton.css'
 import {Battery} from "../../Components/Battery.tsx";
 import {useCallback, useState} from "react";
