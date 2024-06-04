@@ -1,0 +1,16 @@
+.red-button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.battery{
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-choice-content{
+    display: flex;
+    gap:10px
+}
